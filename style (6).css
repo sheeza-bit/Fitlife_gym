@@ -1,0 +1,215 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* BODY */
+body {
+  background: #111;
+  color: #fff;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #000;
+  padding: 15px 20px;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.menu li a:hover {
+  opacity: 0.7;
+}
+
+/* MOBILE MENU */
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.hero h1 {
+  font-size: 28px;
+  color: #ff4d4d;
+}
+
+.hero p {
+  margin-top: 10px;
+  color: #ccc;
+}
+
+/* SECTION TITLE */
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* GALLERY */
+.gallery {
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.gallery img {
+  width: 100%;
+  max-width: 300px;
+  margin: 10px;
+  border-radius: 15px;
+}
+
+/* SERVICES */
+.services {
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.service-box {
+  background: #222;
+  color: #fff;
+  margin: 15px auto;
+  padding: 20px;
+  border-radius: 15px;
+  max-width: 350px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+}
+
+/* ABOUT (FIXED - pink removed) */
+.about {
+  padding: 30px 20px;
+  background: #111;   /* was pink before */
+  color: white;
+  text-align: center;
+}
+
+/* WHY */
+.why-box {
+  background: #222;
+  color: #ccc;
+  margin: 10px auto;
+  padding: 15px;
+  border-radius: 15px;
+  max-width: 350px;
+}
+
+/* FIXED broken CSS */
+.card, .trainer-box, .feature-box {
+  background: #222;
+  color: #fff;
+  padding: 15px;
+  margin: 10px auto;
+  border-radius: 10px;
+  max-width: 350px;
+}
+
+/* CONTACT (FIXED - pink removed) */
+.contact {
+  padding: 30px 20px;
+  text-align: center;
+  background: #111;   /* was pink */
+  color: white;
+}
+
+input, textarea {
+  width: 90%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: none;
+}
+
+button {
+  background: #e60000;
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 25px;
+  border: none;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #ff0000;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #000;
+  color: #fff;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    background: #000;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 150px;
+    padding: 10px;
+  }
+
+  .menu.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+/* FEATURE BOX (Why Join Us) */
+.feature-box {
+  background: #222;
+  color: #fff;
+  margin: 15px auto;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 300px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(255, 0, 0, 0.2);
+}
+
+/* ANIMATION */
+.hidden {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 1.5s;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
